@@ -1,0 +1,73 @@
+html {
+    background: #eee;
+    font: normal 62.5%/1.25 "Helvetica Neue", Helvetiva, Arial, sans-serif;
+}
+
+body {
+    position: relative;
+    width: 50rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 2.5rem;
+    color: #639;
+}
+
+footer {
+    margin: 0 auto 2rem;
+    font-weight: 200;
+    font-size: 1.2rem;
+    color: #639;
+    text-align: right;
+}
+
+canvas {
+    margin: 0 auto .5rem;
+    box-shadow: 0 0 1rem rgba( 0, 0, 0, .125 );
+    background: white;
+}
+
+#copy {
+    position: absolute;
+    top: 57rem;
+}
+
+form {
+    width: 50rem;
+    margin: .8rem 0;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+}
+
+button {
+    display: inline-block;
+    width: 23.5%;
+    background: white;
+    border: 0;
+    box-shadow: 0 0 1rem rgba( 0, 0, 0, .125 );
+    font: 200 1.5rem/2 "Helvetica Neue", Helvetiva, Arial, sans-serif;
+    letter-spacing: .1rem;
+    color: #639;
+    text-align: center;
+    cursor: pointer;
+    transition: all .25s ease-in-out;
+}
+
+button:hover {
+    background: rgba( 102, 51, 153, .25 );
+}
+
+button:focus {
+    outline: 0;
+}
+
+button + button {
+    margin-left: 2%;
+}
