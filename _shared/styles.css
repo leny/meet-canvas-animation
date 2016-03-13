@@ -46,6 +46,12 @@ fieldset {
     font-size: 0;
 }
 
+input {
+    display: block;
+    width: 96%;
+    margin: 0 auto;
+}
+
 button {
     display: inline-block;
     width: 23.5%;

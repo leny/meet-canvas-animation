@@ -18,4 +18,8 @@ Le cours est réparti en X exercices distincts, dans leurs dossiers propres. Le 
 
 ### `exo-one`
 
-Premier exercice : sur base d'une balise `canvas` carrée de 500px de côté, nous allons d'abord dessiner 4 carrés de couleur, écrire un petit titre, rajouter une image au centre de la zone de travail, et enfin rajouter un petit contour interne.
+Premier exercice : à l'instar de notre tout premier exercice sur canvas, nous allons d'abord dessiner 4 carrés de couleur. Nous allons ensuite les animer pour que, chaque seconde, chaque carré change de couleur. Nous en profiterons pour encoder les couleurs sous forme d'un tableau de séquences.
+
+### `exo-two`
+
+Second exercice : en utilisant une [spritesheet](./_shared/ramonaflowers.png) tirée du jeu **Scott Pilgrim vs the World** par [Ubisoft](https://www.ubisoft.com), nous allons animer un cycle de marche d'un personnage.
