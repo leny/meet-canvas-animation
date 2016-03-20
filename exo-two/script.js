@@ -19,6 +19,7 @@
 
         document.getElementById( "animation-speed" ).addEventListener( "change", function() {
             self.currentSpeed = this.value;
+            this.parentNode.querySelector( "strong" ).innerHTML = ~~( 1000 / this.value ) + " i/s";
         } );
     };
 
