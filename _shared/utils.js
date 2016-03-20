@@ -1,4 +1,4 @@
-// hepl-mmi/meet-canvas - utils
+// hepl-mmi/meet-canvas-animation - utils
 
 ( function() {
 

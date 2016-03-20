@@ -1,6 +1,6 @@
 # Meet Canvas Animation
 
-> Base exercise to discover animation withcanvas.
+> Base exercise to discover animation with canvas.
 
 * * *
 
@@ -23,3 +23,11 @@ Premier exercice : à l'instar de notre tout premier exercice sur canvas, nous a
 ### `exo-two`
 
 Second exercice : en utilisant une [spritesheet](./_shared/ramonaflowers.png) tirée du jeu **Scott Pilgrim vs the World** par [Ubisoft](https://www.ubisoft.com), nous allons animer un cycle de marche d'un personnage.
+
+### `exo-three`
+
+Troisième exercice : nous allons créer une bulle, qui va monter vers le haut de l'écran, et qui, une fois hors des limites du _canvas_, reviendra par le dessous, en boucle.
+
+### `exo-four`
+
+Quatrième exercice : sur base de l'exerice précédent, nous allons maintenant créer un canvas rempli de bulles qui tournent en boucle. Nous en profiterons pour créer une classe dédiée, et générerons des bulles aléatoirement.
