@@ -47,9 +47,16 @@ fieldset {
 }
 
 input {
-    display: block;
-    width: 96%;
-    margin: 0 auto;
+    display: inline-block;
+    width: 80%;
+    margin: 0;
+}
+
+strong {
+    display: inline-block;
+    width: 20%;
+    font-size: 1.6rem;
+    text-align: center;
 }
 
 button {
