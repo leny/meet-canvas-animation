@@ -8,11 +8,23 @@
         iBubbleCount = 50;
 
     CanvApp.prototype.prepare = function() {
+        var self = this;
+
         this.bubbles = [];
-        while ( --iBubbleCount ) {
+        while ( iBubbleCount-- ) {
             this.bubbles.push( new Bubble( this ) );
         }
         this.animate();
+
+        this.canvas.addEventListener( "click", function( oEvent ) {
+            // var oBoundingRect = this.getBoundingClientRect(),
+            //     iPositionX = oEvent.clientX - oBoundingRect.left,
+            //     iPositionY = oEvent.clientY - oBoundingRect.top;
+            var iPositionX = oEvent.offsetX,
+                iPositionY = oEvent.offsetY;
+
+            self.bubbles.push( new Bubble( self, iPositionX, iPositionY, true ) );
+        } );
     };
 
     CanvApp.prototype.animate = function() {

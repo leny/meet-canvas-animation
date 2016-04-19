@@ -4,22 +4,27 @@
 
     "use strict";
 
-    var Bubble;
+    var Bubble,
+        aColors = [ "yellow", "hotpink", "red", "black", "orange", "lime", "blue" ];
 
-    Bubble = function( oApp ) {
+    Bubble = function( oApp, iStartX, iStartY, bForceColor ) {
         var iRed, iGreen, iBlue, iAlpha;
 
         this.app = oApp;
-        this.x = ~~( Math.random() * oApp.width );
-        this.y = ~~( Math.random() * oApp.height );
+        this.x = iStartX || ~~( Math.random() * oApp.width );
+        this.y = iStartY || ~~( Math.random() * oApp.height );
         this.radius = ~~( Math.random() * 20 ) + 10;
         this.speed = ~~( this.radius / 3 );
 
-        iRed = ~~( Math.random() * 50 );
-        iGreen = ~~( Math.random() * 50 ) + 128;
-        iBlue = ~~( Math.random() * 127 ) + 128;
-        iAlpha = this.radius / 30;
-        this.color = "rgba( " + iRed + ", " + iGreen + ", " + iBlue + ", " + iAlpha + " )";
+        if ( bForceColor ) {
+            this.color = aColors[ Math.floor( Math.random() * aColors.length ) ];
+        } else {
+            iRed = ~~( Math.random() * 50 );
+            iGreen = ~~( Math.random() * 50 ) + 128;
+            iBlue = ~~( Math.random() * 127 ) + 128;
+            iAlpha = this.radius / 30;
+            this.color = "rgba( " + iRed + ", " + iGreen + ", " + iBlue + ", " + iAlpha + " )";
+        }
     };
 
     Bubble.prototype.update = function() {
