@@ -12,7 +12,7 @@
 
 Ces fichiers servent de base d'exercice pour le cours de découverte de l'animation avec la balise `<canvas>`.
 
-Le cours est réparti en X exercices distincts, dans leurs dossiers propres. Le dossier `_shared` contient les éléments communs à chaque exercices (feuilles de styles, images…). Un workflow Grunt basique est inclus, pour vérifier les fichiers javascript avec **eslint**.
+Le cours est réparti en 4 exercices distincts, dans leurs dossiers propres. Le dossier `_shared` contient les éléments communs à chaque exercices (feuilles de styles, images…). Un workflow Grunt basique est inclus, pour vérifier les fichiers javascript avec **eslint**.
 
 ## Détail des exercices
 
