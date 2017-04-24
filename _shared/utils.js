@@ -1,15 +1,7 @@
-// hepl-mmi/meet-canvas-animation - utils
+// hepl-mmi/meet-canvas - utils
 
-( function() {
+const fIsCanvasSupported = function( $elt ) {
+    return !!$elt.getContext;
+};
 
-    "use strict";
-
-    var _isCanvasSupported;
-
-    _isCanvasSupported = function( $canvasElt ) {
-        return !!$canvasElt.getContext;
-    };
-
-    window.isCanvasSupported = _isCanvasSupported;
-
-} )();
+window.isCanvasSupported = fIsCanvasSupported;
